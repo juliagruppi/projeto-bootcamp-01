@@ -1,0 +1,126 @@
+main{
+  position: relative;
+}
+.banner {
+  background-image: url('../img/fundo-banner-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .banner-conteudo h1{
+  /* padding-left: 8rem; */
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-right: 8rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: #393131;
+}
+
+.banner .banner-conteudo p{
+  /* padding-left: 8rem; */
+  padding-bottom: 4rem;
+  padding-right: 40%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.4rem;
+  color: #393131;
+}
+
+.catalago-de-filmes{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categoria-filmes h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #393131;
+  padding: 20px 0px;
+}
+
+.card{
+}
+
+.catalago-de-filmes .card .card-img-top{
+height: 200px;
+}
+
+.catalago-de-filmes .card .card-body{
+  font-family: 'Rubik', sans-serif ; 
+  color: #393131 ;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.catalago-de-filmes .card .card-text-ano{
+font-size: 1rem;
+font-weight: 200;
+}
+
+.catalago-de-filmes .card .card-text{
+font-size: 1rem;
+font-weight: 300;
+padding-top: 10px;  
+}
+
+.catalago-de-filmes .card .card-title{
+font-size: 1.1rem;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+.catalago-de-filmes .card .btn{
+  font-size: 0.8rem;
+  background-color: #1B4896;
+  border-color: #1B4896;
+  margin-top: auto;
+  width: 50%;
+}
+.catalago-de-filmes .card .btn-primary{
+}
+
+.catalago-de-filmes .card .btn:hover{
+  background-color: #4471c1;
+  border-color: #4471c1;
+}
+
+/* Medium */
+@media (max-width: 991px) 
+
+{
+.container-sm h1{
+  font-size: 2rem !important;
+}
+.container-md h1{
+  font-size: 2rem !important;
+}
+.container-sm p{
+  padding-right: 0px !important;
+}
+.container-md p{
+  padding-right: 0px !important;
+}
+}
+
+/* SMALL  */
+
+/* @media (max-width: 767px) 
+{
+.container-sm h1{
+  font-size: 2rem !important;
+}
+.container-md h1{
+  font-size: 2rem !important;
+}
+.container-sm p{
+  padding-right: 0px !important;
+}
+.container-md p{
+  padding-right: 0px !important;
+}
+} */
+
+
