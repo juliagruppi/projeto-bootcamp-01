@@ -1,0 +1,260 @@
+header{
+  width:100%;
+  background-color: #F4EEEE;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header>div {
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+header a{
+  color: #393131;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.logo{
+  /* float:left; */
+}
+
+.logo img{
+  width: 150px;
+  padding: 10px 0px;
+}
+
+.menu > ul > li > a > img {
+  display: none;
+}
+
+.menu{
+  /* float:left; */
+  /* padding-right: 200px; */
+}
+
+.menu > ul > li > ul >li{
+  padding-top: 10px;
+}
+
+.menu ul li{
+  float:left;
+  
+}
+
+.menu ul li a{
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+.menu ul > li > ul > li > a:before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1B4896;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.4s linear;
+}
+
+.menu ul > li > ul > li > a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1B4896;
+  right: 50%;
+  bottom: 0;
+  transition: all 0.4s linear;
+}
+
+.menu ul > li > ul > li > a:hover:before{
+  width: calc(50% - 10px);
+}
+
+.menu ul > li > ul > li > a:hover:after{
+  width: calc(50% - 10px);
+}
+
+.user{
+  /* float:right; */
+  padding-top: 35px;
+}
+
+.user > ul{
+float: right;
+}
+
+.user > ul > li{
+ position: relative;
+  float: left;
+}
+
+
+.user > ul > li > a{
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+.user > ul > li:first-child > a:before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1B4896;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+
+.user > ul > li:first-child > a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1B4896;
+  right: 50%;
+  bottom: 0;
+  transition: all 0.4s linear;
+}
+
+.user > ul > li:first-child > a:hover:before{
+  width: calc(50% - 10px);
+}
+
+.user > ul > li:first-child > a:hover:after{
+  width: calc(50% - 10px);
+}
+
+.user > ul > li img{
+  width: 20px;
+}
+
+.user > ul > li:nth-child(3){
+animation-name: heartBeat;
+ animation-duration: 3s;
+}
+
+.user > ul > li:nth-child(3) img:hover{
+animation-name: heartBeat;
+ animation-duration: 3s;
+}
+
+
+.user > ul > li > ul{
+  display: none;
+}
+
+/* .user > ul > li > ul >li{
+  position: relative;
+} */
+
+.user > ul > li:hover > ul{
+ display: block;
+ position: absolute;
+ background-color: #F4EEEE;
+ padding: 10px;
+ right: 0;
+ width: 120px;
+}
+
+.user > ul > li > ul > li:first-child{
+ font-weight: 600;
+
+}
+
+@media (max-width: 992px) {
+
+header a{
+  color: #393131;
+  font-size: 1rem;
+  font-weight: 400;
+}
+  
+.logo{
+display: flex;
+align-items: center;
+}
+.logo img{
+width: 150px;
+} 
+
+  
+.menu > ul > li{
+  position: relative;
+  padding-top: 5px;
+} 
+  
+.menu > ul > li > a > img {
+  display: block;
+  width: 40px;
+}
+
+  .menu > ul > li > ul{
+  display: none;
+}
+
+.menu > ul > li:hover ul{
+display: flex;
+flex-flow: column nowrap;
+position: absolute;
+background-color: #F4EEEE;
+padding: 0;
+margin: 0;
+top: 75px;
+width: 150px;
+}
+.menu ul li{
+  
+  background-color: #F4EEEE;
+
+}
+ .menu > ul > li ul li a{
+float: left;
+}
+
+  .user{
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+
+.user > ul > li:nth-child(2){
+display:none;
+} 
+
+}
+
+@media (max-width: 576px) {
+
+.logo img{
+  width: 120px;
+}
+
+.menu ul li a img{
+width: 35px;
+}
+
+  header a{
+  color: #393131;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.user > ul > li > a{
+  padding-right: 3px;
+  padding-left: 0px;
+}
+
+  
+.user > ul > li img{
+  width: 15px;
+}
+
+}
+

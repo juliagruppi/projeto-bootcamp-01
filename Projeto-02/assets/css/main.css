@@ -1,0 +1,248 @@
+main{
+  position: relative;
+}
+
+.banner {
+  background-image: url('../img/fundo-banner-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .banner-conteudo h1{
+  /* padding-left: 8rem; */
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-right: 8rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: #393131;
+}
+
+.banner .banner-conteudo p{
+  /* padding-left: 8rem; */
+  padding-bottom: 4rem;
+  padding-right: 40%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.4rem;
+  color: #393131;
+}
+
+.categoria-filmes{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.catalago-de-filmes{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categoria-filmes h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #393131;
+  padding-bottom: 20px;
+}
+
+.card{
+}
+
+.catalago-de-filmes .card .card-img-top{
+height: 200px;
+}
+
+.catalago-de-filmes .card .card-body{
+  font-family: 'Rubik', sans-serif ; 
+  color: #393131 ;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.catalago-de-filmes .card .card-text-ano{
+font-size: 1rem;
+font-weight: 200;
+}
+
+.catalago-de-filmes .card .card-text{
+font-size: 1rem;
+font-weight: 300;
+padding-top: 10px;  
+}
+
+.catalago-de-filmes .card .card-title{
+font-size: 1.1rem;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+.catalago-de-filmes .card .btn{
+  font-size: 1rem;
+  background-image: url("..");
+  border-color: #1B4896;
+  background-color: #1B4896;
+  margin-top: auto;
+  width: 50%;
+}
+.catalago-de-filmes .card .btn-primary{
+}
+
+.catalago-de-filmes .card .btn:hover{
+  background-color: #4471c1;
+  border-color: #4471c1;
+}
+
+.studio{
+  background-color: #1B4896;
+}
+
+.studio {
+}
+
+.studio .conteudo-studio {
+display: flex;
+padding: 20px 50px;
+align-items: center;
+justify-content: center;
+}
+
+.studio .conteudo-studio .img-studio{
+ /*  width: 40%; */
+display: flex;
+justify-content: center;
+}
+
+.studio .conteudo-studio .img-studio img{
+  width: 250px;
+
+}
+
+.studio .conteudo-studio .informacao-studio{
+/*   width: 60%; */
+}
+
+.studio .conteudo-studio .informacao-studio h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #211c1c;
+ 
+}
+.studio .conteudo-studio .informacao-studio p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.2rem;
+  color: #211c1c;
+  
+}
+.todos-filmes {
+  padding: 40px 60px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.todos-filmes h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #393131;
+  padding-bottom: 20px;
+}
+
+.todos-filmes .catalogo-carrossel{
+box-sizing: border-box;
+
+  
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner{
+  background-color: #E97062;
+  opacity: 1 !important;
+}
+
+.todos-filmes .catalogo-carrossel .catalogo-filmes{
+    padding: 10px;
+  box-sizing: border-box;
+}
+
+.todos-filmes .catalogo-carrossel .catalogo-filmes div{
+
+  width: 100%;
+  height: 371px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+
+}
+
+.todos-filmes .catalogo-carrossel slick-list {
+
+}
+
+.todos-filmes .catalogo-carrossel .slick-arrow{
+  position: absolute;
+  background-color: #E97062;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.todos-filmes .catalogo-carrossel .slick-arrow:hover{
+  background-color: #f5a79e;
+}
+
+.todos-filmes .catalogo-carrossel .slick-next{
+right: -40px;
+}
+.todos-filmes .catalogo-carrossel .slick-prev{
+left: -40px;
+}
+
+/* Medium */
+@media (max-width: 992px) {
+  
+.banner .banner-conteudo h1{
+  /* padding-left: 8rem; */
+  padding-right: 0px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.banner .banner-conteudo p{
+  /* padding-left: 8rem; */
+  padding-right: 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.4rem;
+  color: #393131;
+}
+  .todos-filmes .catalogo-carrossel .slick-arrow{
+  width: 30px;
+  height: 30px;
+
+}
+
+  .todos-filmes .catalogo-carrossel{
+box-sizing: border-box;
+}
+
+  .todos-filmes .catalogo-carrossel .catalogo-filmes{
+    padding: 5px;
+}
+
+}
+  
+
+
+
+
